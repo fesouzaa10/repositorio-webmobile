@@ -4,6 +4,3 @@ A página conterá os tipos de reciclagem, pesquisa de materiais, para saber ond
 Nome: Felipe de Souza Cassemiro
 RA: 10735839
 
-[wireframe_mobile.pdf](https://github.com/user-attachments/files/25766413/wireframe_mobile.pdf)
-[wireframe_desktop.pdf](https://github.com/user-attachments/files/25766419/wireframe_desktop.pdf)
-
