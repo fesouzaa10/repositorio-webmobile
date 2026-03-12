@@ -36,7 +36,6 @@ Cada tipo de material está dentro de um article.
 <p>Lixeira Azul</p>
 </article>
 
-Rodapé
 O footer mostra informações do projeto.
 <footer>
 <p>Informações do projeto</p>
