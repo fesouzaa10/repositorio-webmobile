@@ -13,15 +13,15 @@ Explicação do código
 <p>Aprenda a reciclar corretamente</p>
 </header>
 
-Menu de navegação
-O nav permite navegar entre as páginas.
+Menu de navegação:
+o nav permite navegar entre as páginas.
 <nav>
 <a href="index.html">Início</a>
 <a href="pesquisar.html">Pesquisar</a>
 </nav>
 
-Conteúdo principal
-O main contém as seções do site.
+Conteúdo principal:
+o main contém as seções do site.
 <main>
 <section>
 <h2>Sobre o ReciclaFácil</h2>
