@@ -7,8 +7,8 @@ RA: 10735839
 ![alt text](wireframe_desktop.pdf)
 ![alt text](wireframe_mobile.pdf)
 
-
 Explicação do código
+
 Header
 O header contém o título e a descrição do site.
 <header>
@@ -16,15 +16,12 @@ O header contém o título e a descrição do site.
 <p>Aprenda a reciclar corretamente</p>
 </header>
 
-
 Menu de navegação
 O nav permite navegar entre as páginas.
 <nav>
 <a href="index.html">Início</a>
-<a href="#tipos">Tipos de Reciclagem</a>
 <a href="pesquisar.html">Pesquisar</a>
 </nav>
-
 
 Conteúdo principal
 O main contém as seções do site.
@@ -35,7 +32,6 @@ O main contém as seções do site.
 </section>
 </main>
 
-
 Tipos de reciclagem
 Cada tipo de material está dentro de um article.
 <article>
@@ -43,10 +39,8 @@ Cada tipo de material está dentro de um article.
 <p>Lixeira Azul</p>
 </article>
 
-
 Rodapé
 O footer mostra informações do projeto.
 <footer>
 <p>Informações do projeto</p>
 </footer>
-
