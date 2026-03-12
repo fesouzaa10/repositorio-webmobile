@@ -8,9 +8,6 @@ RA: 10735839
 ![alt text](wireframe_mobile.pdf)
 
 Explicação do código
-
-Header
-O header contém o título e a descrição do site.
 <header>
 <h1>ReciclaFácil</h1>
 <p>Aprenda a reciclar corretamente</p>
