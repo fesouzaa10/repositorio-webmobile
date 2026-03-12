@@ -14,14 +14,14 @@ Explicação do código
 </header>
 
 Menu de navegação:
-o nav permite navegar entre as páginas.
+o Nav permite navegar entre as páginas.
 <nav>
 <a href="index.html">Início</a>
 <a href="pesquisar.html">Pesquisar</a>
 </nav>
 
 Conteúdo principal:
-o main contém as seções do site.
+o Main contém as seções do site.
 <main>
 <section>
 <h2>Sobre o ReciclaFácil</h2>
@@ -29,7 +29,7 @@ o main contém as seções do site.
 </section>
 </main>
 
-Tipos de reciclagem
+Tipos de reciclagem:
 Cada tipo de material está dentro de um article.
 <article>
 <h3>Papel</h3>
