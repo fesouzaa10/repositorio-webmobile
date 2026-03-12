@@ -35,8 +35,3 @@ Cada tipo de material está dentro de um article.
 <h3>Papel</h3>
 <p>Lixeira Azul</p>
 </article>
-
-O footer mostra informações do projeto.
-<footer>
-<p>Informações do projeto</p>
-</footer>
