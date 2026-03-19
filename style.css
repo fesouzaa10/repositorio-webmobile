@@ -1,4 +1,3 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,6 @@
   font-family: Arial, sans-serif;
 }
 
-/* BODY */
 body {
   background-color: #f5f5f5;
 
@@ -15,7 +13,6 @@ body {
   min-height: 100vh;
 }
 
-/* HEADER */
 header {
   background: #2e7d32;
   color: white;
@@ -23,7 +20,6 @@ header {
   padding: 20px;
 }
 
-/* NAV */
 nav {
   margin-top: 10px;
 }
@@ -44,13 +40,11 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* MAIN */
 main {
   padding: 20px;
   flex: 1;
 }
 
-/* SECTIONS */
 section {
   margin-bottom: 40px;
 }
@@ -64,7 +58,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* CARDS */
 .cards {
   display: flex;
   gap: 20px;
@@ -96,7 +89,6 @@ h2 {
   width: 80px;
 }
 
-/* CORES */
 .azul {
   border-left: 8px solid #2196f3;
 }
@@ -113,7 +105,6 @@ h2 {
   border-left: 8px solid #fbc02d;
 }
 
-/* INFO */
 .info {
   display: flex;
   flex-direction: column;
@@ -127,7 +118,6 @@ h2 {
   color: #555;
 }
 
-/* PESQUISA */
 .pesquisa {
   text-align: center;
   margin-top: 50px;
@@ -161,7 +151,6 @@ h2 {
   background: #1b5e20;
 }
 
-/* FOOTER */
 footer {
   background: #2e7d32;
   color: white;
