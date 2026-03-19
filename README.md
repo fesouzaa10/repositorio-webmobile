@@ -15,7 +15,7 @@ Início | Pesquisar
 
 Conteúdo principal: o `<main>` contém as seções do site.
 
-Sobre o ReciclaFácil
+Sobre o ReciclaFácil:
 Explicação sobre o projeto e a importância da reciclagem.
 
 Tipos de reciclagem: Cada tipo de material está dentro de um `<section>` (card).
@@ -36,7 +36,7 @@ Metal
 Lixeira Amarela
 Exemplos: latas, tampas
 
-CSS (estilo do site):
+CSS:
 
 Flexbox: usado para organizar os cards lado a lado.
 
