@@ -7,31 +7,43 @@ RA: 10735839
 ![alt text](wireframe_desktop.pdf)
 ![alt text](wireframe_mobile.pdf)
 
-Explicação do código
-<header>
-<h1>ReciclaFácil</h1>
-<p>Aprenda a reciclar corretamente</p>
-</header>
+ReciclaFácil
+Aprenda a reciclar corretamente
 
-Menu de navegação:
-o Nav permite navegar entre as páginas.
-<nav>
-<a href="index.html">Início</a>
-<a href="pesquisar.html">Pesquisar</a>
-</nav>
+Menu de navegação: o `<nav>` permite navegar entre as páginas.
+Início | Pesquisar
 
-Conteúdo principal:
-o Main contém as seções do site.
-<main>
-<section>
-<h2>Sobre o ReciclaFácil</h2>
-<p>Explicação sobre o projeto.</p>
-</section>
-</main>
+Conteúdo principal: o `<main>` contém as seções do site.
 
-Tipos de reciclagem:
-Cada tipo de material está dentro de um article.
-<article>
-<h3>Papel</h3>
-<p>Lixeira Azul</p>
-</article>
+Sobre o ReciclaFácil
+Explicação sobre o projeto e a importância da reciclagem.
+
+Tipos de reciclagem: Cada tipo de material está dentro de um `<section>` (card).
+
+Papel
+Lixeira Azul
+Exemplos: jornais, revistas, papelão
+
+Plástico
+Lixeira Vermelha
+Exemplos: garrafas PET, sacolas
+
+Vidro
+Lixeira Verde
+Exemplos: garrafas, potes
+
+Metal
+Lixeira Amarela
+Exemplos: latas, tampas
+
+CSS (estilo do site):
+
+Flexbox: usado para organizar os cards lado a lado.
+
+Cores: cada card tem uma cor que representa a lixeira.
+
+Hover: efeito ao passar o mouse nos botões e cards.
+
+Responsividade: com `@media`, o site se adapta ao celular.
+
+Footer: fica no final da página usando Flexbox.
