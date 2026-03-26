@@ -21,19 +21,19 @@ Explicação sobre o projeto e a importância da reciclagem.
 Tipos de reciclagem: Cada tipo de material está dentro de um `<section>` (card).
 
 Papel
-Lixeira Azul
+Lixeira Azul;
 Exemplos: jornais, revistas, papelão
 
 Plástico
-Lixeira Vermelha
+Lixeira Vermelha;
 Exemplos: garrafas PET, sacolas
 
 Vidro
-Lixeira Verde
+Lixeira Verde;
 Exemplos: garrafas, potes
 
 Metal
-Lixeira Amarela
+Lixeira Amarela;
 Exemplos: latas, tampas
 
 CSS:
