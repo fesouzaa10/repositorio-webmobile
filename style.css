@@ -119,7 +119,11 @@ h2 {
   color: #555;
 }
 
-
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
 .pesquisa {
   text-align: center;
   margin-top: 50px;
