@@ -35,61 +35,41 @@
 
   <div class="cards">
 
-    <section class="card azul">
-      <img src="https://img.freepik.com/vetores-premium/lixo-azul-vazio-recicla-a-lixeira-de-plastico_311865-10002.jpg">
-      <div class="info">
-        <h3>Papel</h3>
-        <p>Lixeira Azul</p>
-        <ul>
-          <li>Jornais</li>
-          <li>Revistas</li>
-          <li>Caixas de papelão</li>
-          <li>Folhas de caderno</li>
-        </ul>
-      </div>
-    </section>
+  <section class="card azul" onclick="filtrarLixeira('papel')" style="cursor: pointer;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfuecZ4xBSPsTvepYUtiLirADI7LDluVGgXQ&s">
+    <div class="info">
+      <h3>Papel</h3>
+      <p>Lixeira Azul</p>
+    </div>
+  </section>
 
-    <section class="card vermelho">
-      <img src="https://st3.depositphotos.com/19290026/31768/v/450/depositphotos_317682882-stock-illustration-recycle-bin-red-icon-on.jpg">
-      <div class="info">
-        <h3>Plástico</h3>
-        <p>Lixeira Vermelha</p>
-        <ul>
-          <li>Garrafas PET</li>
-          <li>Sacolas</li>
-          <li>Embalagens</li>
-          <li>Potes</li>
-        </ul>
-      </div>
-    </section>
+  <section class="card vermelho" onclick="filtrarLixeira('plastico')" style="cursor: pointer;">
+    <img src="https://img.freepik.com/vetores-gratis/residuos-de-reciclagem-vermelho_25030-68449.jpg?semt=ais_hybrid&w=740&q=80">
+    <div class="info">
+      <h3>Plástico</h3>
+      <p>Lixeira Vermelha</p>
+    </div>
+  </section>
 
-    <section class="card verde">
-      <img src="https://static.vecteezy.com/system/resources/previews/024/089/832/non_2x/green-waste-bin-ecology-free-png.png">
-      <div class="info">
-        <h3>Vidro</h3>
-        <p>Lixeira Verde</p>
-        <ul>
-          <li>Garrafas</li>
-          <li>Potes de vidro</li>
-          <li>Frascos</li>
-        </ul>
-      </div>
-    </section>
+  <section class="card verde" onclick="filtrarLixeira('vidro')" style="cursor: pointer;">
+    <img src="https://static.vecteezy.com/system/resources/previews/024/089/832/non_2x/green-waste-bin-ecology-free-png.png">
+    <div class="info">
+      <h3>Vidro</h3>
+      <p>Lixeira Verde</p>
+    </div>
+  </section>
 
-    <section class="card amarelo">
-      <img src="https://img.freepik.com/vetores-gratis/residuos-de-reciclagem-amarelo_25030-68159.jpg?semt=ais_hybrid&w=740&q=80">
-      <div class="info">
-        <h3>Metal</h3>
-        <p>Lixeira Amarela</p>
-        <ul>
-          <li>Latas de alumínio</li>
-          <li>Latas de aço</li>
-          <li>Tampas metálicas</li>
-        </ul>
-      </div>
-    </section>
+  <section class="card amarelo" onclick="filtrarLixeira('metal')" style="cursor: pointer;">
+    <img src="https://img.freepik.com/vetores-gratis/residuos-de-reciclagem-amarelo_25030-68159.jpg?semt=ais_hybrid&w=740&q=80">
+    <div class="info">
+      <h3>Metal</h3>
+      <p>Lixeira Amarela</p>
+    </div>
+  </section>
 
-  </div>
+</div>
+
+<p id="resultado" style="display:none;"></p>
 
 </section>
 
