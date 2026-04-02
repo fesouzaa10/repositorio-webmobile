@@ -1,4 +1,4 @@
-O **ReciclaFácil** é uma plataforma educativa desenvolvida para conscientizar a comunidade sobre o descarte correto de resíduos sólidos. O projeto utiliza tecnologias web para ensinar, de forma simples e interativa, como separar diferentes tipos de materiais recicláveis.
+O **ReciclaFácil** é uma plataforma desenvolvida para conscientizar a comunidade sobre o descarte correto de resíduos sólidos. O projeto utiliza tecnologias web para ensinar, de forma simples e interativa, como separar diferentes tipos de materiais recicláveis.
 
 **Nome:** Felipe de Souza Cassemiro  
 **RA:** 10735839
