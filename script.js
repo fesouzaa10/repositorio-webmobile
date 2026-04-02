@@ -1,54 +1,54 @@
+const materiaisDB = [
+  { nome: "Jornal", categoria: "papel", cor: "#2196f3", msg: "AZUL" },
+  { nome: "Revista", categoria: "papel", cor: "#2196f3", msg: "AZUL" },
+  { nome: "Papelão", categoria: "papel", cor: "#2196f3", msg: "AZUL" },
+  { nome: "Garrafa PET", categoria: "plastico", cor: "#f44336", msg: "VERMELHA" },
+  { nome: "Sacola", categoria: "plastico", cor: "#f44336", msg: "VERMELHA" },
+  { nome: "Pote", categoria: "plastico", cor: "#f44336", msg: "VERMELHA" },
+  { nome: "Garrafa de Vidro", categoria: "vidro", cor: "#4caf50", msg: "VERDE" },
+  { nome: "Pote de Vidro", categoria: "vidro", cor: "#4caf50", msg: "VERDE" },
+  { nome: "Lata de Alumínio", categoria: "metal", cor: "#fbc02d", msg: "AMARELA" },
+  { nome: "Lata de Aço", categoria: "metal", cor: "#fbc02d", msg: "AMARELA" }
+];
+
 const input = document.querySelector("input");
 const button = document.querySelector("button");
 const resultado = document.querySelector("#resultado");
 
-button.addEventListener("click", () => {
+function filtrarLixeira(categoria) {
+  const itens = materiaisDB.filter(m => m.categoria === categoria);
+  const nomes = itens.map(m => m.nome).join(", ");
+  const corBase = itens[0].cor;
 
+  exibirResultado(`Itens comuns: ${nomes}`, corBase);
+}
+
+button.addEventListener("click", () => {
   const valor = input.value.toLowerCase().trim();
 
   if (valor === "") {
-    resultado.textContent = "Digite um material!";
+    exibirResultado("Digite um material!", "#333");
     return;
   }
+  const achado = materiaisDB.find(m => 
+    m.nome.toLowerCase().includes(valor) || 
+    m.categoria.includes(valor)
+  );
 
-  if (
-    valor.includes("papel") ||
-    valor.includes("jornal") ||
-    valor.includes("revista") ||
-    valor.includes("papelão")
-  ) {
-    resultado.textContent = "Descarte na lixeira AZUL (Papel)";
+  if (achado) {
+    exibirResultado(`Descarte na lixeira ${achado.msg} (${achado.categoria})`, achado.cor);
+  } else {
+    exibirResultado("Material não encontrado.", "#777");
   }
+});
 
-  else if (
-    valor.includes("plastico") ||
-    valor.includes("plástico") ||
-    valor.includes("garrafa") ||
-    valor.includes("pet") ||
-    valor.includes("sacola")
-  ) {
-    resultado.textContent = "Descarte na lixeira VERMELHA (Plástico)";
-  }
-
-  else if (
-    valor.includes("vidro") ||
-    valor.includes("garrafa de vidro") ||
-    valor.includes("pote de vidro")
-  ) {
-    resultado.textContent = "Descarte na lixeira VERDE (Vidro)";
-  }
-
-  else if (
-    valor.includes("metal") ||
-    valor.includes("lata") ||
-    valor.includes("aluminio") ||
-    valor.includes("alumínio")
-  ) {
-    resultado.textContent = "Descarte na lixeira AMARELA (Metal)";
-  }
-
-  else {
-    resultado.textContent = "Material não encontrado.";
-  }
-
+function exibirResultado(texto, cor) {
+  resultado.textContent = texto;
+  resultado.style.borderLeftColor = cor;
+  resultado.style.color = cor;
+  resultado.style.backgroundColor = cor + "11"; 
+  resultado.style.display = "block";
+}
+input.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") button.click();
 });
