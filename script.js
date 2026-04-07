@@ -1,3 +1,5 @@
+//Banco de dados dos materiais
+
 const materiaisDB = [
   { nome: "Jornal", categoria: "papel", cor: "#2196f3", msg: "AZUL" },
   { nome: "Revista", categoria: "papel", cor: "#2196f3", msg: "AZUL" },
@@ -15,6 +17,8 @@ const input = document.querySelector("input");
 const button = document.querySelector("button");
 const resultado = document.querySelector("#resultado");
 
+//Filtro por clique
+
 function filtrarLixeira(categoria) {
   const itens = materiaisDB.filter(m => m.categoria === categoria);
   const nomes = itens.map(m => m.nome).join(", ");
@@ -23,6 +27,8 @@ function filtrarLixeira(categoria) {
   exibirResultado(`Itens comuns: ${nomes}`, corBase);
 }
 
+// Função de Pesquisa
+
 button.addEventListener("click", () => {
   const valor = input.value.toLowerCase().trim();
 
@@ -30,6 +36,9 @@ button.addEventListener("click", () => {
     exibirResultado("Digite um material!", "#333");
     return;
   }
+
+  // Busca no banco de dados
+  
   const achado = materiaisDB.find(m => 
     m.nome.toLowerCase().includes(valor) || 
     m.categoria.includes(valor)
@@ -42,13 +51,15 @@ button.addEventListener("click", () => {
   }
 });
 
+//Feedback dinâmico
 function exibirResultado(texto, cor) {
   resultado.textContent = texto;
   resultado.style.borderLeftColor = cor;
   resultado.style.color = cor;
   resultado.style.backgroundColor = cor + "11"; 
-  resultado.style.display = "block";
+  resultado.style.display = "block"; // Faz o card aparecer apenas agora
 }
+// Pesquisa com o enter
 input.addEventListener("keypress", (e) => {
   if (e.key === "Enter") button.click();
 });
