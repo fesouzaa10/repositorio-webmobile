@@ -3,9 +3,8 @@ O **ReciclaFácil** é uma plataforma desenvolvida para conscientizar a comunida
 **Nome:** Felipe de Souza Cassemiro  
 **RA:** 10735839
 
-*[Clique aqui para visualizar o Wireframe para Desktop](./wireframe_desktop.pdf)
-*[Clique aqui para visualizar o Wireframe para Mobile](./wireframe_mobile.pdf)
-
+* [Clique aqui para visualizar o Wireframe para Desktop](./wireframe_desktop.pdf)
+* [Clique aqui para visualizar o Wireframe para Mobile](./wireframe_mobile.pdf)
 ---
 
 ## 1. Estrutura do Projeto (HTML)
