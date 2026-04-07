@@ -22,7 +22,6 @@
 
 <section>
   <h2>Sobre o ReciclaFácil</h2>
-
   <p>
     O ReciclaFácil foi feito para ajudar as pessoas a reciclarem corretamente,
     trazendo informação simples e acessível para toda a comunidade.
@@ -30,47 +29,43 @@
 </section>
 
 <section id="tipos">
-
   <h2>Tipos de Reciclagem</h2>
 
-  <div class="cards">
+  <section class="cards">
+    <article class="card azul" onclick="filtrarLixeira('papel')">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfuecZ4xBSPsTvepYUtiLirADI7LDluVGgXQ&s" alt="Lixeira azul para papel">
+      <section class="info">
+        <h3>Papel</h3>
+        <p>Lixeira Azul</p>
+      </section>
+    </article>
 
-  <section class="card azul" onclick="filtrarLixeira('papel')" style="cursor: pointer;">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfuecZ4xBSPsTvepYUtiLirADI7LDluVGgXQ&s">
-    <div class="info">
-      <h3>Papel</h3>
-      <p>Lixeira Azul</p>
-    </div>
+    <article class="card vermelho" onclick="filtrarLixeira('plastico')">
+      <img src="https://img.freepik.com/vetores-gratis/residuos-de-reciclagem-vermelho_25030-68449.jpg?semt=ais_hybrid&w=740&q=80" alt="Lixeira vermelha para plástico">
+      <section class="info">
+        <h3>Plástico</h3>
+        <p>Lixeira Vermelha</p>
+      </section>
+    </article>
+
+    <article class="card verde" onclick="filtrarLixeira('vidro')">
+      <img src="https://static.vecteezy.com/system/resources/previews/024/089/832/non_2x/green-waste-bin-ecology-free-png.png" alt="Lixeira verde para vidro">
+      <section class="info">
+        <h3>Vidro</h3>
+        <p>Lixeira Verde</p>
+      </section>
+    </article>
+
+    <article class="card amarelo" onclick="filtrarLixeira('metal')">
+      <img src="https://img.freepik.com/vetores-gratis/residuos-de-reciclagem-amarelo_25030-68159.jpg?semt=ais_hybrid&w=740&q=80" alt="Lixeira amarela para metal">
+      <section class="info">
+        <h3>Metal</h3>
+        <p>Lixeira Amarela</p>
+      </section>
+    </article>
   </section>
 
-  <section class="card vermelho" onclick="filtrarLixeira('plastico')" style="cursor: pointer;">
-    <img src="https://img.freepik.com/vetores-gratis/residuos-de-reciclagem-vermelho_25030-68449.jpg?semt=ais_hybrid&w=740&q=80">
-    <div class="info">
-      <h3>Plástico</h3>
-      <p>Lixeira Vermelha</p>
-    </div>
-  </section>
-
-  <section class="card verde" onclick="filtrarLixeira('vidro')" style="cursor: pointer;">
-    <img src="https://static.vecteezy.com/system/resources/previews/024/089/832/non_2x/green-waste-bin-ecology-free-png.png">
-    <div class="info">
-      <h3>Vidro</h3>
-      <p>Lixeira Verde</p>
-    </div>
-  </section>
-
-  <section class="card amarelo" onclick="filtrarLixeira('metal')" style="cursor: pointer;">
-    <img src="https://img.freepik.com/vetores-gratis/residuos-de-reciclagem-amarelo_25030-68159.jpg?semt=ais_hybrid&w=740&q=80">
-    <div class="info">
-      <h3>Metal</h3>
-      <p>Lixeira Amarela</p>
-    </div>
-  </section>
-
-</div>
-
-<p id="resultado" style="display:none;"></p>
-
+  <p id="resultado"></p>
 </section>
 
 </main>
